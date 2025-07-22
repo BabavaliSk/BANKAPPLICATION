@@ -1,4 +1,4 @@
-#File-Based Banking Management System in C
+File-Based Banking Management System in C
 This is a menu-driven banking application developed in the C programming language. It uses linked lists and file handling to manage customer account data. The application performs core banking operations such as account creation, deposit, withdrawal, balance inquiry, and transaction history. All data is stored in text files to ensure it is saved and loaded between sessions.
 
 Features
