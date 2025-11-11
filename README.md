@@ -1,95 +1,51 @@
-File-Based Banking Management System in C
-This is a menu-driven banking application developed in the C programming language. It uses linked lists and file handling to manage customer account data. The application performs core banking operations such as account creation, deposit, withdrawal, balance inquiry, and transaction history. All data is stored in text files to ensure it is saved and loaded between sessions.
+Bank App C Project
+
+This is my simple bank management system written in C. Each function is in a separate C file and all files are compiled together using a Makefile.
 
 Features
-Create new customer bank accounts
 
-Deposit and withdraw money
+Create account
+Deposit money
+Withdraw money
+Transfer money
+Check balance
+View account details
+Transaction history
+Save and load account data
+Exit the app safely
 
-View account balance
+Files in this Project
+Bank_app.c - Main program file that contains the main function
+Creat_account.c - Handles creation of new accounts
+Display.c - Displays account information
+Withdraw_amount.c - Handles withdrawal of money
+Deposit_amount1.c - Handles deposits
+Transfar_money.c - Transfers money between accounts
+Balance_enquery.c - Checks balance
+Trsnsaction_history.c - Maintains and displays transaction history
+Searching_for_account.c - Searches account by name or number
+Save_the_accounts_info_in_file.c - Saves data to file
+synkfromfile1.c - Loads data from file
+Quit_from_app.c - Quits the program safely
+structure.c - Defines the structures used across files
+printmenu.c - Displays menu options to the user
 
-Maintain transaction history
+How to Run
 
-Persistent data storage using text files
+Clone the repo
+git clone https://github.com/your-username/your-repo-name.git
 
-Input validation and error handling
+cd your-repo-name
 
-Modular code using separate functions
-
-Build system using Makefile
-
-Project Structure
-main.c
-banking.c
-banking.h
-Makefile
-data.txt
-transactions.txt
-README.md
-
-Build and Run Instructions
-Prerequisites
-GCC compiler
-
-Make utility
-
-Build the Project
-Run the following command in your terminal:
-
+Build the project
 make
 
-Run the Program
-After building, run the executable:
+Run the program
+./a.out
 
-./bank
-
-Clean the Build Files
-To remove object files and the executable:
-
+Clean files
 make clean
 
-File Descriptions
-main.c - Entry point of the program; handles user input and menu
+About the Makefile
 
-banking.c - Contains the implementation of banking operations
-
-banking.h - Header file with structure definitions and function declarations
-
-data.txt - Text file used to store customer account information
-
-transactions.txt - Text file that stores transaction logs
-
-Makefile - Automates compilation of source files into an executable
-
-Functionalities
-Account creation: Adds new customer records to the file and linked list
-
-Deposit: Adds a specified amount to a customer’s balance
-
-Withdraw: Deducts an amount, ensuring sufficient balance
-
-Balance inquiry: Displays the current balance of an account
-
-Transaction history: Lists past transactions for an account
-
-Input Validations
-Prevents duplicate account numbers
-
-Checks for sufficient balance before withdrawal
-
-Handles invalid menu selections
-
-Validates file access and availability
-
-Future Enhancements
-Add password-based account login
-
-Use binary files for faster and more secure storage
-
-Implement a user interface using a GUI framework
-
-Add interest calculation and monthly statement generation
-
-License
-This project is not licensed for public use. It is intended for personal and educational reference only.
-
+The Makefile compiles all C files into object files and links them to create a.out automatically.
